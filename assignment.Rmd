@@ -316,7 +316,7 @@ ggplot(allia,aes(year,value,color=crop)) +
   geom_point() +
   geom_smooth(method="lm",se=FALSE) +
   theme_bw() +
-  labs(x="yield", title = "Comparing County Average for Corn and Soy Yields Over time", subtitle="Linear model with year as predictor for yield")
+  labs(x="yield", title = "Comparing County Average for Corn and Soy Yields Over Time", subtitle="Linear model with year as predictor for yield")
 
 #panel
 allia2 <- left_join(cornall,soyyields,by=c("year"="year","county_ansi" = "county_ansi")) %>% 
